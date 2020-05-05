@@ -83,6 +83,36 @@
     ```python 
     a*=3    a-=3    a/=3    a**=3
     ```
+
+- Opérations usuelles
+    l'addition de a et b 
+    ```python
+    a+b
+    ```
+    la soustraction de a par b
+    ```python
+    a-b
+    ```
+    la multiplication de a par b
+    ```python
+    a*b
+    ```
+    l'exponentiation de a par b
+    ```python
+    a**b
+    ```
+    la division de a par b
+    ```python
+    a/b
+    ```
+    le quotient de a par b
+    ```python
+    a//b
+    ```
+    le reste de a par b
+    ```python
+    a%b
+    ```
     
 ## Manipulation des tableaux
 
