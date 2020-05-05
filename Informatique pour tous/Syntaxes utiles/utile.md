@@ -125,7 +125,12 @@
 - Séparation de deux éléments a et b quelconque dans un tableau
     
     ```python
-    tableau = [a;b]
+    tableau = [a,b]
+    ```
+- Concaténer deux tableaux t1 et t2
+
+    ```python
+    t1+t2
     ```
     
 - Récupérer le n-ième élément d'un tableau
