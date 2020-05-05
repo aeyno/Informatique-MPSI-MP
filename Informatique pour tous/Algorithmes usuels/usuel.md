@@ -1,5 +1,30 @@
 # Les algorithmes usuels
 
+## Exponentiation
+
+- Récursive
+
+```python
+def exp_recursive(x,n):
+    if n==0:
+        return 1
+    else:
+        x*exp_recursive(x,n-1)
+ ```
+ 
+ - Itérative
+ 
+ ```python
+ def exp_iterative(x,n):
+    if n==0:
+        return 1
+    else:
+        r=1
+        for _ in range(n):
+            r*=x
+        return r
+   ```
+    
 ## Exponentiation rapide
     
 Calcule x^n en log(n) opérations
