@@ -20,4 +20,20 @@ def exp_rapide(x,n):
 
 - Récursive
 
+```python
+def factorielle_rec(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorielle_rec(n-1)
+```
+
 - Itérative
+
+```python
+def factorielle_ite(n):
+    r=1
+    for i in range(n):
+        r*=i+1
+    return r
+``` 
