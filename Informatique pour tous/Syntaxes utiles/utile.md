@@ -81,7 +81,7 @@
     ```
     par 
     ```python 
-    a*=3    a-=3    a/=3    a*=3
+    a*=3    a-=3    a/=3    a**=3
     ```
     
 ## Manipulation des tableaux
