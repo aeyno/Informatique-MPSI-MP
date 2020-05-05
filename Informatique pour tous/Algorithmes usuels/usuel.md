@@ -9,7 +9,7 @@ def exp_recursive(x,n):
     if n==0:
         return 1
     else:
-        x*exp_recursive(x,n-1)
+        return x*exp_recursive(x,n-1)
  ```
  
  - Itérative
