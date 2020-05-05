@@ -62,3 +62,27 @@ def factorielle_ite(n):
         r*=i+1
     return r
 ``` 
+
+## Suite de Fibonacci
+
+- Récursive
+
+```python
+def fibo_rec(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else :
+        return fibo_rec(n-1)+fibo_rec(n-2)
+```
+
+- Itérative
+
+```python
+def fibo_ite(n):
+    a,b=0,1
+    for _ in range(n):
+        a,b=b,a+b
+    return a
+```
