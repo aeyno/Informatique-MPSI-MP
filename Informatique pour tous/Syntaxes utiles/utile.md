@@ -28,8 +28,42 @@
     for i in range(a,b):
         traitement(i)
     ```
+- Boucle while ( tant que la condition n'est pas rempli : faire )
+    
+    ```python
+    while a<b :
+        traitement(a)
+    ```
+- If/Else si a alors b sinon c
+     
+     ```python
+     if a!=b: 
+        traitement(a)
+    else:
+        traitement2(a)
+    ```
+## Tests de comparaison
 
+- Test d'égalité entre a et b
+    
+    ```python
+    a==b
+    ```
+    
+- Test de différence entre a et b
 
+    ```python
+    a!=b
+    ```
+    
+- Test a plus petit que b (strictement), a plus petit ou égale à b et a plus grand que b 
+
+    ```python
+    a<b
+    a<=b
+    a>b
+    ```
+    
 ## Manipulation des tableaux
 
 - Déclaration d'un tableau
