@@ -63,6 +63,26 @@
     a<=b
     a>b
     ```
+
+## Opérations utiles
+
+- Opérations raccourcies 
+    
+    ```python 
+    a=a+3
+    ```
+    est similaire à 
+    ```python
+    a+=3
+    ```
+    de même on peut remplacer 
+    ```python 
+    a=a*3   a=a-3   a=a/3   a=a**3
+    ```
+    par 
+    ```python 
+    a*=3    a-=3    a/=3    a*=3
+    ```
     
 ## Manipulation des tableaux
 
