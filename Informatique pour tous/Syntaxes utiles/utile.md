@@ -37,7 +37,12 @@
     ```python
     tableau = []
     ```
-
+- Séparation de deux éléments a et b quelconque dans un tableau
+    
+    ```python
+    tableau = [a;b]
+    ```
+    
 - Récupérer le n-ième élément d'un tableau
     
     ```python
