@@ -85,6 +85,7 @@
     ```
 
 - Opérations usuelles
+    
     l'addition de a et b 
     ```python
     a+b
