@@ -38,7 +38,7 @@
     tableau = []
     ```
 
-- Récupérer le (n+1)-ième élément d'un tableau
+- Récupérer le n-ième élément d'un tableau
     
     ```python
     x = tableau[n]
