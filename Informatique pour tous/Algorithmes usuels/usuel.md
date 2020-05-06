@@ -93,3 +93,4 @@ def fibo_ite(n):
 ```python
 def echange(L,i,j):
     L[i],L[j]=L[j],L[i]
+```
