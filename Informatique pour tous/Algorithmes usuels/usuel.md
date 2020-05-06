@@ -98,10 +98,7 @@ def echange(L,i,j):
 ## Fonction partie entière
 
 ```python
-def partie_entiere(x):
-    if (x-int(x))*10<=5:
-        return int(x)
-    return int(x)+1
+int(x)
 ```    
 
 ## Fonction valeur absolue 
