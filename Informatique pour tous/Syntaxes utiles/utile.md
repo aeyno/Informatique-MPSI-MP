@@ -28,19 +28,19 @@
     for i in range(a,b):
         traitement(i)
     ```
-- Boucle while ( tant que la condition n'est pas rempli : faire )
+- Boucle while (tant que la condition est vraie : faire)
     
     ```python
-    while a<b :
-        traitement(a)
+    while condition==True :
+        traitement()
     ```
 - If/Else si a alors b sinon c
      
      ```python
-     if a!=b: 
-        traitement(a)
+     if condition: 
+        traitement()
     else:
-        traitement2(a)
+        traitement2()
     ```
 ## Tests de comparaison
 
