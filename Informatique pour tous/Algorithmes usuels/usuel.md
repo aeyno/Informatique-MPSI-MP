@@ -69,6 +69,7 @@ def factorielle_ite(n):
 
 ```python
 def fibo_rec(n):
+
     if n==0:
         return 0
     elif n==1:
@@ -86,3 +87,9 @@ def fibo_ite(n):
         a,b=b,a+b
     return a
 ```
+
+## Echange de deux éléments d'une liste
+
+```python
+def echange(L,i,j):
+    L[i],L[j]=L[j],L[i]
