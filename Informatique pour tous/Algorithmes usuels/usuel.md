@@ -94,3 +94,29 @@ def fibo_ite(n):
 def echange(L,i,j):
     L[i],L[j]=L[j],L[i]
 ```
+
+## Fonction partie entière
+
+```python
+def partie_entiere(x):
+    if (x-int(x))*10<=5:
+        return int(x)
+    return int(x)+1
+```    
+
+## Fonction valeur absolue 
+
+en python elle existe sous la forme 
+
+```python
+abs(x)
+```
+
+on peut la coder sous cette forme
+
+```python
+def absolue(x):
+    if x<0:
+        retrurn -x
+    return x 
+```
