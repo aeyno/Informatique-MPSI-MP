@@ -117,6 +117,6 @@ on peut la coder sous cette forme
 ```python
 def absolue(x):
     if x<0:
-        retrurn -x
+        return -x
     return x 
 ```
