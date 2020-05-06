@@ -64,6 +64,7 @@ Complexité:
 
 ```python
 def fusion(L1,L2,g,m,d):
+    '''On fusionne deux tableaux triés L1 et L2'''
     i = g
     j = m
     for k in range(g,d):
