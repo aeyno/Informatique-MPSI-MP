@@ -117,3 +117,12 @@ def absolue(x):
         return -x
     return x 
 ```
+
+## Plus grand commun diviseur (PGCD)
+
+```python
+def pgcd(a,b):
+    while b!=0:
+        a,b=b,a%b
+    return a
+```
