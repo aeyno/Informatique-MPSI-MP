@@ -28,7 +28,7 @@ def tri_insertion(L):
 
 ## Tri rapide
 
-Description: 
+Description: Tri récursif
 
 Complexité:
 - Meilleur cas : O(n log(n))
