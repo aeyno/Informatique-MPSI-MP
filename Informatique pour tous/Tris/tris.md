@@ -85,6 +85,7 @@ def fusion(L1,L2,g,m,d):
             j+=1
 
 def aux_fusion(g,d,L,tmp):
+    '''On découpe le tableau récursivement'''
     if g < d-1:
         m = int((g+d)/2)
         aux_fusion(g,m,L,tmp)
