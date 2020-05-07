@@ -18,3 +18,31 @@ def decode(l):
         msg += chr(l[i])
     return msg
 ```
+
+## Chiffrement de César
+
+```python
+def chiffrement_cesar(message, p):
+    s = []
+    for i in range(len(message)):
+        s.append((message[i] + p)%256)
+    return s
+
+
+def dechiffrement_cesar(message, p):
+    return chiffrement_cesar(message, -p)
+```
+
+## Code de Vigenère
+
+```python
+def chiffrement_vigenere(msg, cle):
+    s = []
+    for i in range(len(msg)):
+        s.append((msg[i] + cle[i%len(cle)])%256)
+    return s
+
+def dechiffrement_vigenere(msg, cle):
+    a = [-x for x in cle]
+    return chiffrement_vigenere(msg, a)
+```
