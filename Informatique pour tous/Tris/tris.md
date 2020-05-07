@@ -25,6 +25,19 @@ def tri_insertion(L):
         L[j] = v
 ```
 
+## Tri à bulle
+
+Description: On fait remonter les éléments du tableau en faisant des permutations des cases voisines.
+
+Complexité:
+- Meilleur cas : O(n)
+- En moyenne : O(n^2)
+- Pire cas : O(n^2)
+
+```python
+def tri_bulle(L):
+    pass
+```
 
 ## Tri rapide
 
@@ -64,7 +77,7 @@ def tri_rapide(L):
 
 ## Tri fusion
 
-Description: On découpe le tableau en deux récusivement jusqu'à obtenir des tableaux d'un seul éléments que l'on fusionnent en mettant leurs éléments dans l'ordre.
+Description: On découpe le tableau en deux récusivement jusqu'à obtenir des tableaux d'un seul éléments que l'on fusionne en mettant leurs éléments dans l'ordre.
 
 Complexité:
 - Meilleur cas : O(n log(n))
