@@ -178,8 +178,8 @@ Plusieurs méthodes et leurs utilisations:
     ```python
     from module import nom
     nom(argument)
-    ```
-    ```python
+
+
     import module as md
     md.nom(argument)
     ```
