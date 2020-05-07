@@ -128,7 +128,7 @@ def pgcd(a,b):
 ```
 
 ## Algorithme d'Euclide étendu 
-
+L'algorithme d'Euclide étendu permet d'obtenir 2 entiers tels que r1 = u1 * x + v1 * y avec r1 le pgcd(x,y)
 ```python
 def euclide_etendu(x,y):
     (r1,u1,v1,r2,u2,v2)=(x,1,0,y,0,1)
