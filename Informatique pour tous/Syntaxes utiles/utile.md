@@ -173,7 +173,7 @@
     ```
 ## Importation de module
 
-Plusieurs méthodes et leurs utilisations:
+    Plusieurs méthodes et leurs utilisations:
 
     ```python
     from module import nom
