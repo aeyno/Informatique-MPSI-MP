@@ -5,6 +5,9 @@ Le site [bigocheatsheet.com](https://www.bigocheatsheet.com/) répertorie les al
 
 ## Tri insertion
 
+Description: on parcours le tableau en triant les éléments au fur et à mesure. Au i-éme élément, on le fait descendre jusqu'à sa place dans le début du tableau (qui est déjà trié).
+Dans cet exemple, l'algorithme fonctionne par effet de bord.
+
 Complexité:
 - Meilleur cas : O(n)
 - En moyenne : O(n^2)
@@ -16,14 +19,16 @@ def tri_insertion(L):
         v = L[i]
         j = i
         while (j > 0) and (v < L[j-1]):
+            #Tant que l'élément est plus petit on le fait descendre
             L[j] = L[j-1]
             j = j-1
         L[j] = v
-    return L
 ```
 
 
 ## Tri rapide
+
+Description: 
 
 Complexité:
 - Meilleur cas : O(n log(n))
@@ -31,21 +36,23 @@ Complexité:
 - Pire cas : O(n^2)
 
 ```python
-def échange(L,i,j):
+def echange(L,i,j):
     '''Échange 2 cases i et j d'un tableau'''
     L[i], L[j] = L[j], L[i]
 
 def partitition(L,g,d):
+    '''On choisit un pivot entre g et d dans L, et on tri tous les éléments de l'intervalle à droite ou à gauche du pivot selon qu'ils soient plus grands ou plus petit.'''
     pivot = L[randrange(g,d)]
     m = g
     for i in range(g+1,d):
         if L[i] < pivot:
             m = m+1
             échange(L,i,m)
-    échange(L,g,m)
+    echange(L,g,m)
     return m
 
 def aux_rapide(L,g,d):
+    '''On partitionne récursivement les sous-tableaux du tableau à trier'''
     if g < d-1:
         m = partitition(L,g,d)
         aux_rapide(L,g,m)
