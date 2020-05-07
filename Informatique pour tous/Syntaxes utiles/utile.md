@@ -34,13 +34,15 @@
     while condition==True :
         traitement()
     ```
-- If/Else si a alors b sinon c
+- If/Else/Elif si a alors b sinon c
      
      ```python
      if condition: 
         traitement()
-    else:
+    elif condition2:
         traitement2()
+    else:
+        traitement3()
     ```
 ## Tests de comparaison
 
