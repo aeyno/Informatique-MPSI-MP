@@ -3,7 +3,7 @@
 def dichotomie(f, a, b, epsilon):
     '''On recherche un réel l compris entre a et b tel que f(l)=0. Pour cela on réduit successivement l'intervalle de recherche, en le coupant en deux, jusqu'a ce qu'il soit plus petit que Epsilon.'''
     while b-a > 2*epsilon:
-        m = (a+b/2)
+        m = (a+b)/2
         if f(a)*f(m) > 0:
             a = m
         else:
