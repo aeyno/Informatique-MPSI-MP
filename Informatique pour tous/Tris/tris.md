@@ -64,6 +64,8 @@ def tri_rapide(L):
 
 ## Tri fusion
 
+Description: On découpe le tableau en deux récusivement jusqu'à obtenir des tableaux d'un seul éléments que l'on fusionnent en mettant leurs éléments dans l'ordre.
+
 Complexité:
 - Meilleur cas : O(n log(n))
 - En moyenne : O(n log(n))
