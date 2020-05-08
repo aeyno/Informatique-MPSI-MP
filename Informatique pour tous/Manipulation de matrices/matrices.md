@@ -62,6 +62,18 @@ def produit_matriciel(A,B):
         print("incompatible")
 ```
 
+## Addition de deux matrices de même taille
+
+```python
+def addition_a_et_b(A,B):
+    a1,a2=dimension_matrice(A)
+    L=matrice(a1,a2)
+    for i in range(a2):
+        for j in range(a1):
+            L[i][j]=A[i][j]+B[i][j]
+    return L 
+```
+
 ## Multiplication par un scalaire d'une matrice
 
 ```python
