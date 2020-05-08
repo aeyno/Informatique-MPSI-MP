@@ -62,17 +62,6 @@ def produit_matriciel(A,B):
         print("incompatible")
 ```
 
-## Trace d'une matrice carré
-
-```python
-def trace(A):
-    a1,a2=dimension_matrice(A)
-    s=0
-    for i in range(a1):
-        s+=A[i][i]
-    return s 
-```
-
 ## Multiplication par un scalaire d'une matrice
 
 ```python
@@ -88,4 +77,29 @@ def multiplication_matrice(n,A):
         multiplication_ligne(n,A,i)
     return A
 ```
+
+
+## Transposé d'une matrice carré 
+
+```python
+def transpose(A):
+    a1,a2=dimension_matrice(A)
+    for i in range(a1):
+        for j in range(i):
+            A[i][j],A[j][i]=A[j][i],A[i][j]
+    return A
+```
+
+## Trace d'une matrice carré
+
+```python
+def trace(A):
+    a1,a2=dimension_matrice(A)
+    s=0
+    for i in range(a1):
+        s+=A[i][i]
+    return s 
+```
+
+
 
