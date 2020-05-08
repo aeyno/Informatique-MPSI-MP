@@ -17,30 +17,40 @@ def matrice(n,p,v=0):
 ## Creation d'une matrice carré de taille n
 
 ```python
-def matrice_carre(n):
-    return matrice(n,n)
+def matrice_carre(n,v=0):
+    return matrice(n,n,v)
 ```
+## Matrice identité 
+
+```python
+def identite(n):
+    L=matrice_carre(n)
+    for i in range(n):
+        L[i][i]=1
+    return L
+``` 
+
 ## Produit matriciel de a par b
 
 ```python
-def aux_a_i_j(a,b,i,j):
+def aux_a_i_j(A,B,i,j):
     '''Somme des A_i,k B_k,j'''
-    a1,a2=dimension_matrice(a)
-    b1,b2=dimension_matrice(b)
+    a1,a2=dimension_matrice(A)
+    b1,b2=dimension_matrice(B)
     s=0
     for k in range(a2):
-        s+=a[k][i]*b[j][k]
+        s+=A[k][i]*B[j][k]
     return s
     
     
-def produit_matriciel(a,b):
-    a1,a2=dimension_matrice(a)
-    b1,b2=dimension_matrice(b)
+def produit_matriciel(A,B):
+    a1,a2=dimension_matrice(A)
+    b1,b2=dimension_matrice(B)
     if a1==b2:
         L=matrice(a1,b2)
         for i in range(a1):
             for j in range(a1):
-                L[j][i]=aux_a_i_j(a,b,i,j)
+                L[j][i]=aux_a_i_j(A,B,i,j)
         return L
     else :
         print("incompatible")
@@ -49,27 +59,27 @@ def produit_matriciel(a,b):
 ## Trace d'une matrice carré
 
 ```python
-def trace(a):
-    a1,a2=dimension_matrice(a)
+def trace(A):
+    a1,a2=dimension_matrice(A)
     s=0
     for i in range(a1):
-        s+=a[i][i]
+        s+=A[i][i]
     return s 
 ```
 
 ## Multiplication par un scalaire d'une matrice
 
 ```python
-def multiplication_ligne(n,a,i):
-    a1,a2=dimension_matrice(a)
+def multiplication_ligne(n,A,i):
+    a1,a2=dimension_matrice(A)
     for k in range(a2):
-        a[k][i]*=n
-    return a
+        A[k][i]*=n
+    return A
         
-def multiplication_matrice(n,a):
-    a1,a2=dimension_matrice(a)
+def multiplication_matrice(n,A):
+    a1,a2=dimension_matrice(A)
     for i in range(a1):
-        multiplication_ligne(n,a,i)
-    return a
+        multiplication_ligne(n,A,i)
+    return A
 ```
 
