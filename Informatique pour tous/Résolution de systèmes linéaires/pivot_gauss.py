@@ -45,13 +45,30 @@ def choixpivot(M, j):
 def pivot_gauss(A, B):
     '''Résoud le système AX = B où A est une matrice nxn et B un vecteur colonne de taille nx1.'''
     # On concatène les deux matrices A et B en une matrice de dimension nx(n+1)
-    C = A[:].append(B)
+    C = A[:]
+    C.append(B)
 
-    for j in range(len(A)):
-        i = choixpivot(A, j)
+    for j in range(len(A[0])):
+        # On transforme la matrice en matrice triangulaire supérieure
+        i = choixpivot(C, j)
         if i == -1:
             raise ValueError("La matrice A n'est pas inversible")
         echange(C, i, j)
+        for k in range(j+1, len(A[0])):
+            c = -C[j][k]/C[j][j]
+            transvection(C, k, j, c)
+
+    for i in range(len(A[0])):
+        # On met des 1 sur la diagonale
+        dilatation(C, i, 1/C[i][i])
+
+    for i in range(len(A[0])-1, -1, -1):
+        # On laisse uniquement la diagonale en remontant ligne par ligne
+        for k in range(i-1, -1, -1):
+            c = -C[i][k]
+            transvection(C, k, i, c)
+
+    return C
 
 
 # Avec Numpy
@@ -99,5 +116,9 @@ def np_pivot(A, B):
         dilatation(C, j, 1/C[j, j])
 
     for j in range(len(A)-1, -1, -1):
-        pass
-    # return C
+        # On laisse uniquement la diagonale en remontant ligne par ligne
+        for k in range(j-1, -1, -1):
+            c = -C[j][k]
+            transvection(C, k, j, c)
+
+    return C

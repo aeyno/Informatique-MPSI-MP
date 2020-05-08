@@ -1,5 +1,20 @@
 # Manipulation de matrices
 
+
+Dans les programmes suivants, les matrices sont des tableaux de vecteurs (tableaux de colonnes).
+
+
+## Affichage d'une matrice carrée
+
+```python
+def printMat(M):
+    '''Affiche une matrice'''
+    for i in range(0, len(M[0])):
+        for j in range(0, len(M)):
+            print(M[j][i], end='\t')
+        print()
+```
+
 ## Creation d'une matrice de taille n,p
 
 ```python
@@ -65,7 +80,7 @@ def produit_matriciel(A,B):
 ## Addition de deux matrices de même taille
 
 ```python
-def addition_a_et_b(A,B):
+def addition_matrices(A,B):
     a1,a2=dimension_matrice(A)
     L=matrice(a1,a2)
     for i in range(a2):
