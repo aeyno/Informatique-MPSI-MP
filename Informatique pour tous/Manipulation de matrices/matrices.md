@@ -15,6 +15,27 @@ def printMat(M):
         print()
 ```
 
+
+## Passage d'une matrice numpy à une matrice avec des listes et inversement
+
+```python
+def numpy2list(M):
+    '''Transforme une matrice définie commme un tableau de vecteurs en matrice numpy'''
+    A = []
+    for i in range(np.shape(M)[0]):
+        C = []
+        for j in range(np.shape(M)[1]):
+            C.append(M[j, i])
+        A.append(C)
+    return A
+
+
+def list2numpy(M):
+    '''Transforme une matrice numpy en matrice définie commme un tableau de vecteurs'''
+    return np.array(M).transpose()
+```
+
+
 ## Creation d'une matrice de taille n,p
 
 ```python
