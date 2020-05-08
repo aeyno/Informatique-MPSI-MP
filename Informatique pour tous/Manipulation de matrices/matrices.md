@@ -29,6 +29,12 @@ def identite(n):
         L[i][i]=1
     return L
 ``` 
+## Dimension d'une matrice quelconque
+
+```python
+def dimension_matrice(A):
+    return len(A[0]),len(A)
+```
 
 ## Produit matriciel de a par b
 
