@@ -127,15 +127,16 @@ def multiplication_matrice(n,A):
 ```
 
 
-## Transposé d'une matrice carré 
+## Transposé d'une matrice 
 
 ```python
 def transpose(A):
     a1,a2=dimension_matrice(A)
+    B=matrice(a2,a1)
     for i in range(a1):
-        for j in range(i):
-            A[i][j],A[j][i]=A[j][i],A[i][j]
-    return A
+        for j in range(a2):
+            B[i][j]=A[j][i]
+    return B
 ```
 
 ## Trace d'une matrice carré
