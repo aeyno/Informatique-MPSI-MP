@@ -3,12 +3,13 @@
 ## Creation d'une matrice de taille n,p
 
 ```python
-def matrice(n,p):
+def matrice(n,p,v=0):
+    '''Créé une matrice de taille nxp remplie avec la valeur v'''
     L=[]
     for _ in range(p):
         L1=[]
         for _ in range(n):
-            L1.append(0)
+            L1.append(v)
         L.append(L1)
     return L
 ```
@@ -23,6 +24,7 @@ def matrice_carre(n):
 
 ```python
 def aux_a_i_j(a,b,i,j):
+    '''Somme des A_i,k B_k,j'''
     a1,a2=dimension_matrice(a)
     b1,b2=dimension_matrice(b)
     s=0
