@@ -4,7 +4,7 @@
 Dans les programmes suivants, les matrices sont des tableaux de vecteurs (tableaux de colonnes).
 
 
-## Affichage d'une matrice carrée
+## Affichage d'une matrice 
 
 ```python
 def printMat(M):
