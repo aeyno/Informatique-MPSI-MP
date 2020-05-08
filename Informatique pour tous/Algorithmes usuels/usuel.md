@@ -23,7 +23,7 @@ def exp_recursive(x,n):
         for _ in range(n):
             r*=x
         return r
-   ```
+```
     
 ## Exponentiation rapide
     
