@@ -88,7 +88,7 @@ def fibo_ite(n):
     return a
 ```
 
-## Echange de deux éléments d'une liste
+## Échange de deux éléments d'une liste
 
 ```python
 def echange(L,i,j):
