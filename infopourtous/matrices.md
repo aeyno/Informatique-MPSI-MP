@@ -153,6 +153,7 @@ def trace(A):
 
 ```python 
 def matrice_sans_ligne_i_colonne_j(A,i,j):
+    '''supprime la ligne i et la colonne j de la matrice'''
     a1,a2=dimension_matrice(A)
     B=matrice(a1-1,a2-1)
     L1=[]
