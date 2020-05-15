@@ -149,6 +149,35 @@ def trace(A):
         s+=A[i][i]
     return s 
 ```
+## Determinant 
 
-
-
+```python 
+def matrice_sans_ligne_i_colonne_j(A,i,j):
+    a1,a2=dimension_matrice(A)
+    B=matrice(a1-1,a2-1)
+    L1=[]
+    L2=[]
+    for k in range(a1):
+        L1.append(k)
+    L1.pop(i)
+    for m in range(a2):
+        L2.append(m)
+    L2.pop(j)
+    for n in range(a2-1):
+        a=L2[n]
+        for o in range(a1-1):
+            b=L1[o]
+            B[n][o]=A[a][b]
+    return B
+    
+def determinant(A):
+    a1,a2=dimension_matrice(A)
+    p=0
+    if a1==2:
+        return A[0][0]*A[1][1]-A[0][1]*A[1][0]
+    else :
+        for k in range(a1):
+            A1=matrice_sans_ligne_i_colonne_j(A,0,k)
+            p+=((-1)**k)*A[k][0]*determinant(A1)
+    return p
+```
