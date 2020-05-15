@@ -108,7 +108,7 @@ def np_pivot(A, B):
     for j in range(len(A)):
         i = choixpivot(A, j)
         if (i == -1):
-            return "erreur"
+            raise ValueError("La matrice A n'est pas inversible")
         echange(C, i, j)
         for k in range(j+1, len(A)):
             c = -C[k, j]/C[j, j]
