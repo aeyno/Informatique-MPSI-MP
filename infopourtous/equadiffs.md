@@ -8,7 +8,6 @@ La fonction retourne un tableau de n couples de points par lesquels passe la fon
 
 ```python
 def euler(f,a,b,y0,n):
-    ''''''
     T = b-a
     h = T/n
     Yk = [0]*n
