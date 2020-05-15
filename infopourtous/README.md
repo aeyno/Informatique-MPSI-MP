@@ -1,6 +1,6 @@
 # Informatique pour tous
 
-Liste des chapites
+## Liste des chapites
 
 * [Syntaxes utiles](syntaxes_utiles.md)
 * [Algorithmes usuels](algos_usuels.md)
