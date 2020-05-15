@@ -1,6 +1,6 @@
 # Informatique pour la prépa MPSI/MP
 
-Vous trouverez ici l'ensembles des algorithmes au programme d'informatique de classe préparatoire MPSI et MP.
+Vous trouverez ici l'ensemble des algorithmes au programme d'informatique de classe préparatoire MPSI et MP.
 
 ## [Informatique pour tous (Python)](infopourtous/README.md)
 

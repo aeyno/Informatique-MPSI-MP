@@ -2,5 +2,5 @@
 
 ## Liste des chapitres
 
-* [Syntaxes utiles](syntaxes_utiles.md)
-* [Algorithmes de tri](tris.md)
+* [Syntaxes utiles](opt_syntaxes_utiles.md)
+* [Algorithmes de tri](opt_tris.md)
