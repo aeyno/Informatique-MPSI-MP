@@ -1,12 +1,11 @@
 # Algorithme du pivot de Gauss pour la résolution d'un système d'équations linéaire
 
 
-import numpy as np
+## Sans Numpy
 
-# Sans Numpy
-# Une matrice est un tableau de vecteurs colonnes M = [C1, C2, C3...] avec Ci un tableau de nombres
+Une matrice est un tableau de vecteurs colonnes M = [C1, C2, C3...] avec Ci un tableau de nombres
 
-
+```python
 def transvection(M, i, j, c):
     '''Ajoute c fois la ligne j à la ligne i'''
     for k in range(len(M)):
@@ -69,11 +68,14 @@ def pivot_gauss(A, B):
             transvection(C, k, i, c)
 
     return C
+```
 
+## Avec Numpy
 
-# Avec Numpy
-# Les matrices sont des tableaux numpy bidimensionnels
+Les matrices sont des tableaux numpy bidimensionnels
 
+```python
+import numpy as np
 
 def np_transvection(C, i, j, c):
     C[i] = C[i] + c*C[j]
@@ -122,3 +124,4 @@ def np_pivot(A, B):
             transvection(C, k, j, c)
 
     return C
+```
