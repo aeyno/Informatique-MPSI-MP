@@ -11,6 +11,6 @@
   * [Algorithmes de tri](/infopourtous/tris.md)
   * [Cryptographie](/infopourtous/cryptographie.md)
 * [Option informatique](/optioninfo/README.md)
-  * [Syntaxes utiles](syntaxes_utiles.md)
-  * [Algorithmes de tri](tris.md)
+  * [Syntaxes utiles](/optioninfo/opt_syntaxes_utiles.md)
+  * [Algorithmes de tri](/optioninfo/opt_tris.md)
  
