@@ -1,0 +1,16 @@
+
+* [Accueil](/)
+* [Informatique pour tous](/infopourtous/README.md)
+  * [Syntaxes utiles](/infopourtous/syntaxes_utiles.md)
+  * [Algorithmes usuels](/infopourtous/algos_usuels.md)
+  * [Résolution d'équations réelles](/infopourtous/equations_reelles.md)
+  * [Résolution d'équations différentielles](/infopourtous/equadiffs.md)
+  * [Calcul d'intégrales](/infopourtous/integrales.md)
+  * [Opérations sur les matrices](/infopourtous/matrices.md)
+  * [Résolution de systèmes linéaire](/infopourtous/pivot_gauss.md)
+  * [Algorithmes de tri](/infopourtous/tris.md)
+  * [Cryptographie](/infopourtous/cryptographie.md)
+* [Option informatique](/optioninfo/README.md)
+  * [Syntaxes utiles](syntaxes_utiles.md)
+  * [Algorithmes de tri](tris.md)
+ 
