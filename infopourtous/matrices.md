@@ -153,32 +153,30 @@ def trace(A):
 
 ```python 
 def matrice_sans_ligne_i_colonne_j(A,i,j):
-    '''supprime la ligne i et la colonne j de la matrice'''
-    a1,a2=dimension_matrice(A)
-    B=matrice(a1-1,a2-1)
-    L1=[]
-    L2=[]
-    for k in range(a1):
-        L1.append(k)
-    L1.pop(i)
-    for m in range(a2):
-        L2.append(m)
-    L2.pop(j)
-    for n in range(a2-1):
-        a=L2[n]
-        for o in range(a1-1):
-            b=L1[o]
-            B[n][o]=A[a][b]
+    '''Retourne la matrice privée de sa i-ième ligne et de sa j-ième colonne'''
+    n=len(A)
+    B=[]
+    for c in range(n):
+        if c != j:
+            col = []
+            for l in range(n):
+                if l != i:
+                    col.append(A[c][l])
+            B.append(col)
     return B
-    
+
 def determinant(A):
-    a1,a2=dimension_matrice(A)
-    p=0
-    if a1==2:
+    '''Calcul récursif du déterminant d'une matrice'''
+    l,c=dimension_matrice(A)
+    if c != l:
+        raise ValueError("La matrice n'est pas carrée")
+    det=0
+    if c==2:
+        #si on a une matrice de taille 2x2
         return A[0][0]*A[1][1]-A[0][1]*A[1][0]
     else :
-        for k in range(a1):
+        for k in range(c):
             A1=matrice_sans_ligne_i_colonne_j(A,0,k)
-            p+=((-1)**k)*A[k][0]*determinant(A1)
-    return p
+            det+=((-1)**k)*A[k][0]*determinant(A1)
+    return det
 ```
