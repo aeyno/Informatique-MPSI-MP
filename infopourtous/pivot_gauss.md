@@ -1,5 +1,6 @@
 # Algorithme du pivot de Gauss pour la résolution d'un système d'équations linéaire
 
+L'algorithme du pivot de Gauss permet de résoudre une équation de la forme AX = B avec A une matrice de dimension nxn et B un vecteur de taille n. Complexité: O(n³)
 
 ## Sans Numpy
 
