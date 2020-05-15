@@ -31,7 +31,7 @@
 - Boucle while (tant que la condition est vraie : faire)
     
     ```python
-    while condition==True :
+    while condition :
         traitement()
     ```
 - If/Else/Elif si a alors b sinon c
@@ -178,7 +178,6 @@
     ```python
     from module import nom
     nom(argument)
-    
     
     import module as md
     md.nom(argument)
