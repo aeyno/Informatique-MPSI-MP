@@ -2,13 +2,13 @@
 
 Vous trouverez ici l'ensemble des algorithmes au programme d'informatique de classe préparatoire MPSI et MP.
 
-## [Informatique pour tous (Python)](infopourtous/README.md)
+___
 
+## [Informatique pour tous (Python)](infopourtous/README.md)
 
 ## [Option informatique (OCaml)](optioninfo/README.md)
 
-
-
+___
 
 # Contributeurs
 
