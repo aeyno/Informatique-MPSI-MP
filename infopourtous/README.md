@@ -11,3 +11,4 @@
 * [Résolution de systèmes linéaire](pivot_gauss.md)
 * [Algorithmes de tri](tris.md)
 * [Cryptographie](cryptographie.md)
+* [Graphes](graphes.md)
