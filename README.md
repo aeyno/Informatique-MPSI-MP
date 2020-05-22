@@ -10,7 +10,7 @@ ___
 
 ___
 
-# Contributeurs
+## Contributeurs
 
 * [Tom G.](https://github.com/Any0ne22)
 * [Alexandre J.](https://github.com/jerdnaxela)

@@ -16,7 +16,7 @@ let a = 5;;
 
 - Fonction récursive
 
-    Exemple de la fonction factorielle 
+    Exemple de la fonction factorielle
 
     ```ocaml
     let rec factorielle n = match n with
@@ -35,6 +35,7 @@ let a = 5;;
     ```
 
 - Boucle while (tant que la condition est vraie : faire)
+  
     ```ocaml
     while condition do
         traitement
