@@ -52,7 +52,7 @@ En OCaml les piles sont tout simplement des listes.
 let pile_vide () = [];;
 ```
 
-### Opé&rations sur les piles
+### Opérations sur les piles
 
 ```ocaml
 let empile v p = v :: p;;
