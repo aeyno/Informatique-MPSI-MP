@@ -1,6 +1,5 @@
 # Algorithmes de tri
 
-
 Le site [bigocheatsheet.com](https://www.bigocheatsheet.com/) répertorie les algorithmes de tri les plus courants ainsi que leurs complexités respectives.
 
 ## Tri insertion
@@ -9,6 +8,7 @@ Description: on parcours le tableau en triant les éléments au fur et à mesure
 Dans cet exemple, l'algorithme fonctionne par effet de bord.
 
 Complexité:
+
 - Meilleur cas : O(n)
 - En moyenne : O(n^2)
 - Pire cas : O(n^2)
@@ -30,6 +30,7 @@ def tri_insertion(L):
 Description: On fait remonter les éléments du tableau en faisant des permutations des cases voisines.
 
 Complexité:
+
 - Meilleur cas : O(n)
 - En moyenne : O(n^2)
 - Pire cas : O(n^2)
@@ -44,6 +45,7 @@ def tri_bulle(L):
 Description: Tri récursif
 
 Complexité:
+
 - Meilleur cas : O(n log(n))
 - En moyenne : O(n log(n))
 - Pire cas : O(n^2)
@@ -80,6 +82,7 @@ def tri_rapide(L):
 Description: On découpe le tableau en deux récusivement jusqu'à obtenir des tableaux d'un seul éléments que l'on fusionne en mettant leurs éléments dans l'ordre.
 
 Complexité:
+
 - Meilleur cas : O(n log(n))
 - En moyenne : O(n log(n))
 - Pire cas : O(n log(n))

@@ -1,10 +1,8 @@
 # Manipulation de matrices
 
-
 Dans les programmes suivants, les matrices sont des tableaux de vecteurs (tableaux de colonnes).
 
-
-## Affichage d'une matrice 
+## Affichage d'une matrice
 
 ```python
 def printMat(M):
@@ -14,7 +12,6 @@ def printMat(M):
             print(M[j][i], end='\t')
         print()
 ```
-
 
 ## Passage d'une matrice numpy à une matrice avec des listes et inversement
 
@@ -34,7 +31,6 @@ def list2numpy(M):
     '''Transforme une matrice numpy en matrice définie commme un tableau de vecteurs'''
     return np.array(M).transpose()
 ```
-
 
 ## Creation d'une matrice de taille n,p
 
@@ -56,7 +52,8 @@ def matrice(n,p,v=0):
 def matrice_carre(n,v=0):
     return matrice(n,n,v)
 ```
-## Matrice identité 
+
+## Matrice identité
 
 ```python
 def identite(n):
@@ -64,7 +61,8 @@ def identite(n):
     for i in range(n):
         L[i][i]=1
     return L
-``` 
+```
+
 ## Dimension d'une matrice quelconque
 
 ```python
@@ -83,8 +81,7 @@ def aux_a_i_j(A,B,i,j):
     for k in range(a2):
         s+=A[k][i]*B[j][k]
     return s
-    
-    
+
 def produit_matriciel(A,B):
     a1,a2=dimension_matrice(A)
     b1,b2=dimension_matrice(B)
@@ -107,7 +104,7 @@ def addition_matrices(A,B):
     for i in range(a2):
         for j in range(a1):
             L[i][j]=A[i][j]+B[i][j]
-    return L 
+    return L
 ```
 
 ## Multiplication par un scalaire d'une matrice
@@ -118,7 +115,7 @@ def multiplication_ligne(n,A,i):
     for k in range(a2):
         A[k][i]*=n
     return A
-        
+
 def multiplication_matrice(n,A):
     a1,a2=dimension_matrice(A)
     for i in range(a1):
@@ -126,8 +123,7 @@ def multiplication_matrice(n,A):
     return A
 ```
 
-
-## Transposé d'une matrice 
+## Transposé d'une matrice
 
 ```python
 def transpose(A):
@@ -147,11 +143,12 @@ def trace(A):
     s=0
     for i in range(a1):
         s+=A[i][i]
-    return s 
+    return s
 ```
-## Determinant 
 
-```python 
+## Determinant
+
+```python
 def matrice_sans_ligne_i_colonne_j(A,i,j):
     '''Retourne la matrice privée de sa i-ième ligne et de sa j-ième colonne'''
     n=len(A)

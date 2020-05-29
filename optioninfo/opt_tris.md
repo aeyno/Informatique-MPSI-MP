@@ -65,9 +65,9 @@ Complexité:
 
 ```ocaml
 let une_passe fin v =
-    let echange = ref false in 
+    let echange = ref false in
     for i = 1 to fin do
-        if v.(i-1) > v.(i) then 
+        if v.(i-1) > v.(i) then
             let tmp = v.(i) in
             v.(i) <- v.(i-1);
             v.(i-1) <- tmp;
@@ -94,9 +94,9 @@ let rec une_passe_liste l = match l with
                 | l -> t::l ;;
 
 
-let rec tri_bulle_liste = 
+let rec tri_bulle_liste =
     | [] -> []
-    | -> match une_passe_liste l with 
+    | -> match une_passe_liste l with
             | true, t::q -> t::(tri_bulle_liste q)
             | _ -> l;;
 ```
