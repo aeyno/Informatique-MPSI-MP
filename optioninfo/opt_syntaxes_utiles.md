@@ -34,6 +34,14 @@ let a = 5;;
     done;;
     ```
 
+- Boucle for dégressive (i variant de a (inclu) à b (inclu))
+
+    ```ocaml
+    for i=a downto b do
+        traitement i
+    done;;
+    ```
+
 - Boucle while (tant que la condition est vraie : faire)
   
     ```ocaml
